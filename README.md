@@ -21,4 +21,5 @@ released version; `in-next-release` means it's fixed and waiting for that releas
 ## Code
 
 The source is in [finest-home/integration](https://github.com/finest-home/integration)
-(the integration) and the app's repository. Pull requests go to the repository they change.
+(the integration) and [finest-home/app](https://github.com/finest-home/app) (the app).
+Pull requests go to the repository they change.
