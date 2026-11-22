@@ -1,0 +1,82 @@
+name: Something doesn't work
+description: A problem with the Finest Home app or the Finest integration for Home Assistant.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Issues here are public: never post tokens, passwords, connection codes, your home's address or anyone's name.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, and what went wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we see it happen?
+      description: Steps, one per line, if you know them.
+      placeholder: |
+        1. Open the Rooms tab
+        2. Tap the living room light
+        3. Nothing happens
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where does it happen?
+      options:
+        - In the app
+        - In the Finest panel or elsewhere in Home Assistant
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Which phone or tablet?
+      multiple: true
+      options:
+        - iPhone
+        - iPad
+        - Android phone
+        - Android tablet
+        - Doesn't matter
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: In the app, under Settings ("App Version").
+      placeholder: "1.0.1"
+  - type: input
+    id: integration-version
+    attributes:
+      label: Integration version
+      description: At the top of the Finest panel in Home Assistant.
+      placeholder: "1.6.20"
+  - type: input
+    id: ha-version
+    attributes:
+      label: Home Assistant version
+      description: In Home Assistant, under Settings, then About.
+      placeholder: "2026.11.1"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Home Assistant log lines
+      description: Lines that mention finest_app, if there are any. Remove tokens, addresses and names before posting.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the existing issues, and this isn't one of them.
+          required: true
+        - label: This issue contains no tokens, passwords, connection codes, addresses or names.
+          required: true

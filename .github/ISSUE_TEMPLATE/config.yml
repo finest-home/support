@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup guide
+    url: https://docs.finest.rs
+    about: Installing the integration, signing in, remote access and troubleshooting. Most answers are here.
+  - name: Account, subscription or payment
+    url: https://app.finest.rs/support
+    about: Email us instead. Issues here are public, so don't post account or payment details.
+  - name: Security issue
+    url: https://app.finest.rs/security
+    about: Report it privately by email, not as a public issue.
